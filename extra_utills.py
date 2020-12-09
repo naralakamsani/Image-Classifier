@@ -1,8 +1,10 @@
+# Imports here
 import torch
 from torch import optim
 import numpy as np
 import matplotlib.pyplot as plt
  
+# converts a PyTorch tensor and displays it
 def imshow(image, ax=None, title=None):
     """Imshow for Tensor."""
     if ax is None:
@@ -24,15 +26,20 @@ def imshow(image, ax=None, title=None):
     
     return ax
 
+
+# Do validation
 def model_accuracy(model,testloader):
     accuracy = 0
-    model.eval()
+  
+    model.eval() # switching to evaluation mode so that dropout is turned off
+   
+    # Turn off gradients for validation, saves memory and computations
     with torch.no_grad():
         for inputs, labels in testloader:
             inputs, labels = inputs.to(device), labels.to(device)
             logps = model.forward(inputs)
-
-
+         
+            # Calculate Validation loss and Validation accuracy for test dat set
             ps = torch.exp(logps)
             top_p, top_class = ps.topk(1, dim=1)
             equals = top_class == labels.view(*top_class.shape)
@@ -40,16 +47,22 @@ def model_accuracy(model,testloader):
 
     print(f"Test accuracy: {accuracy/len(testloader):.3f}")
 
-    model.train()
+    model.train() #Set model back to training mode
     
+# Display an image along with the top 5 classes
 def image_predict_visual(image_path, model, class_name_dic = 'cat_to_name.json'):
+ 
+    # Predict the top K classses using the predict function
     probs,class_indexes,class_names = predict(image_path, model, class_name_dic)
-
+   
+    # Show the image
     ax = imshow(process_image(image_path))
 
+    # Set title as the actual flower name
     flower_number = image_path.split('/')[2]
     ax.set_title(class_to_name[flower_number])
 
+    # Plot the graph
     plt.figure(figsize=(5,5))
     plt.barh(range(len(probs)),probs)
     plt.yticks(range(len(probs)),class_names)
