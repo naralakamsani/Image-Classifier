@@ -67,18 +67,3 @@ def image_predict_visual(image_path, model, class_name_dic = 'cat_to_name.json')
     plt.barh(range(len(probs)),probs)
     plt.yticks(range(len(probs)),class_names)
     plt.show()
-    
-def load_checkpoint_retrain(path):
-    checkpoint = torch.load(path)
-
-    #load the model
-    model = checkpoint['model']
-    
-    #load the state_dicts
-    model.load_state_dict(checkpoint['state_dict'])
-    
-    optimizer = optim.Adam(model.classifier.parameters(), lr=0.001)
-    
-    model.idx_to_class = checkpoint['idx_to_class']
-    
-    return model
