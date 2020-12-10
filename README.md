@@ -12,7 +12,3 @@
 - pip install Pillow
 - pip install requests
 - pip install notebook
-
-
-### Open(run on command line)
-* jupyter notebook
