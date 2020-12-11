@@ -20,9 +20,9 @@
 - pip install requests
 - pip install notebook
 
-### Run(command line application)
+### Running the command line application
 
 
-### Run(jupyter notebook)
-- Go to command line and enter: jupyter notebook
+### Open
+- Use jupyter notebook
 
