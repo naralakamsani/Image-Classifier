@@ -24,6 +24,6 @@
 
 
 ### Run(jupyter notebook)
-- Go to command line for the and enter:
-jupyter notebook
+Go to command line for the and enter:
+- jupyter notebook
 
