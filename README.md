@@ -18,7 +18,7 @@
 - pip install Pillow
 - pip install requests
 - pip install notebook
-- In order to install Pytorch follow the instructions given on the [official site][https://pytorch.org/]
+- In order to install Pytorch follow the instructions given on the [official site](https://pytorch.org/)
 
 ### Running the command line application
 - Train a new network on a data set with **train.py**
