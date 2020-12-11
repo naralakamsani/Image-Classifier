@@ -23,6 +23,6 @@
 ### Running the command line application
 
 
-### Running the IPYNB
+### Running the ipynb
 - Use jupyter notebook
 
