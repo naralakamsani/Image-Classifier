@@ -12,7 +12,6 @@ The data need to comprised of 3 folders:
 - validate
 
 Inside the train, test and validate folders there should be folders bearing a specific number which corresponds to a specific category, clarified in the json file. 
-
 For example, if we have the image x.jpg and it is a lotus it could be in a path like this /test/5/x.jpg and json file would be like this {...5:"lotus",...}.
 
 ### Install(run on command line)
