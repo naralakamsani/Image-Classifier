@@ -1,12 +1,11 @@
 # Image-Classifier
 
-
 ### Project Overview
 
 ### Data
 - The data used specifically for this assignment are a flower database(.json file). It is not provided in the repository as it's larger than what github allows.
-- The data can be found in https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html
-- The Dataset Images in the download category should be downloaded as flowers
+- The data can be found in https://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz
+- Extract the folder and name the folder containing all data "flowers" for the jupyter notebook to work properly
 
 - The data need to comprised of 3 folders: test, train, validate
 
