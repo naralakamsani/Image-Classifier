@@ -1,6 +1,8 @@
 # Image-Classifier
 
 ### Project Overview
+- In this project, I trained an image classifier to recognize different species of flowers.
+- I mafe a command line application that can be trained on any set of labelled images. Here my network will be learning about flowers.
 
 ### Data
 - The data used specifically for this assignment are a flower database(.json file). It is not provided in the repository as it's larger than what github allows.
