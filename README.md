@@ -14,11 +14,11 @@
 
 ### Install(run on command line)
 - pip install pandas
-- pip install torch===1.7.0 torchvision===0.8.1 torchaudio===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html (might differ based on the PC used. Should refer to the pytorvh website for better instructions)
 - pip install matplotlib
 - pip install Pillow
 - pip install requests
 - pip install notebook
+- In order to install Pytorch follow the instructions given on the official site[https://pytorch.org/].
 
 ### Running the command line application
 - Train a new network on a data set with **train.py**
