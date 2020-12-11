@@ -4,8 +4,16 @@
 ### Project Overview
 
 ### Data
+The data used specifically for this assignment are a flower database(.json file). It is not provided in the repository as it's larger than what github allows.
 
+The data need to comprised of 3 folders:
+- test
+- train
+- validate
 
+Inside the train, test and validate folders there should be folders bearing a specific number which corresponds to a specific category, clarified in the json file. 
+
+For example, if we have the image x.jpg and it is a lotus it could be in a path like this /test/5/x.jpg and json file would be like this {...5:"lotus",...}.
 
 ### Install(run on command line)
 - pip install pandas
