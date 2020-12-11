@@ -12,7 +12,7 @@
 - Inside the train, test and validate folders there should be folders bearing a specific number which corresponds to a specific category, clarified in the json file
 - For example, if we have the image x.jpg and it is a lotus it could be in a path like this /test/5/x.jpg and json file would be like this {...5:"lotus",...}
 
-### Install (run on command line)
+### Install(run on command line)
 - pip install pandas
 - pip install torch===1.7.0 torchvision===0.8.1 torchaudio===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html (might differ based on the PC used. Should refer to the pytorvh website for better instructions)
 - pip install matplotlib
