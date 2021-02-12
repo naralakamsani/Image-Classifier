@@ -1,7 +1,7 @@
 # Image-Classifier
 
 ### Project Overview
-- Load and preprocess a dataset of fowers images
+- Load and preprocess a dataset of flowers images
 - Train the image classifier on your dataset of flowers
 - Use the trained classifier to predict image content
 - Create a command line application that can trained on any set of labeled images, and make predictions
