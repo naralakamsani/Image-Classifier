@@ -29,7 +29,7 @@
   - Basic Usage : ```python train.py data_directory```<br/>
   - Prints out current epoch, training loss, validation loss, and validation accuracy as the netowrk trains
   - Options:
-    - Set direcotry to save checkpoints: ```python train.py data_dor --save_dir save_directory```
+    - Set direcotry to save checkpoints: ```python train.py data_dir --save_dir save_directory```
     - Choose arcitecture (densenet121 or vgg16 available): ```python train.py data_dir --arch "vgg16"```
     - Set hyperparameters: ```python train.py data_dir --learning_rate 0.001 --hidden_layer1 120 --epochs 20```
     - Use GPU for training: ```python train.py data_dir --gpu gpu```
