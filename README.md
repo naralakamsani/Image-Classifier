@@ -4,7 +4,7 @@
 - Load and preprocess the dataset of flowers images
 - Train the image classifier on your dataset of flowers
 - Use the trained classifier to predict image content
-- Create a command line application that can trained on any set of labeled images, and make predictions
+- Create a command line application that can be trained on any set of labeled images, and make predictions
 
 ### Data
 - The data used specifically for this assignment are a flower database(.json file). It is not provided in the repository as it's larger than what github allows.
